@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title> Signup </title>
+		
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito&family=Permanent+Marker&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Righteous&display=swap" rel="stylesheet">
+	<style>
+		body
+			{
+				text-align:center;
+				padding-top:50px;
+			}
+		h1
+			{
+				color:black;
+				font-family:Righteous; 
+				font-size:30px;
+			}
+		
+		.input
+			{
+				width:310px;
+				height:30px;
+				border:1px solid lightgray;
+			}
+		#lbl
+			{
+				color:gray;
+				font-family:nunito;
+				font-size:13px;
+			}
+		.links
+			{
+				color:gray;
+				font-family:nunito;
+				font-size:13px;
+				text-decoration:none;
+			}
+		#signup
+			{
+				background-color:black;
+				width:300px;
+				height:30px;
+				border:1px solid black;
+				border-radius:2.5px;
+			}
+		#signup:hover
+			{
+				background-color:#303030;
+			}
+	</style>
+	</head>
+	
+	<body>
+		<?php require 'partials/_nav.php' ?>
+		<h1> TYPOMETER </h1>
+		<input type="text" name="firstname" placeholder="First Name" class="input"> <br> <br>
+		<input type="text" name="lastname" placeholder="Last Name" class="input"> <br> <br>
+		<input type="email" name="email" placeholder="Email address" class="input"> <br> <br>
+		<input type="password" name="password" placeholder="Password" class="input"> <br> <br>
+		<input type="password" name="cpassword" placeholder="Re-enter Password" class="input"> <br> <br>
+		<input type="date" placeholder="Birth-date" class="input"> <br> <br>
+		
+		<p class="links">By creating an account, you agree our <a href="privacypolicy.html" style="color:black" class="links">Privacy Policy</a> </p> 
+		<p class="links"> and <a href="terms.html" style="color:black" class="links">Terms of use</a> </p> 
+		
+		<button type="submit" id="signup"> <a href="login.html" style="font-family:Bebas Neue ; color:white ; font-size:20px" class="links"> Sign up </a> </button> <br> <br>
+		<label for="create" id="lbl">Already a member?<a href="login.html" style="color:black" class="links"> Login </a></label><br>
+	</body>
+</html>

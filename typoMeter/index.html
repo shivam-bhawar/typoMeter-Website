@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title> typoMeter </title>
+		
+		<link href="style.css" rel="stylesheet"> <!-- Link CSS file -->
+		<script src="main.js"></script> <!-- Link JavaScript file -->
+		
+		<link href="https://fonts.googleapis.com/css2?family=Monofett&display=swap" rel="stylesheet"> <!-- TYPOMETER title font -->
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet"> <!-- Navigation menu font -->
+		<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet"> <!-- Paragraph words font -->
+	</head>
+ 
+	<body onload="addWords()">
+		<header>
+			<li>
+				<a href="login.php" title="Login through existing account" class="nav" style="top:14px" target="blank"> Login </a>
+			</li>
+			<li>
+				<a href="signup.php" title="Create new account" class="nav" style="top:30px" target="blank"> Register </a>
+			</li>
+			<li>
+				<a href="about_us.html" title="Know about developers" class="nav" style="top:46px" target="blank"> About </a>
+			</li>
+			
+			<h1>
+				<span id="T1"> T </span> 
+				<span id="Y"> Y </span>
+				<span id="P"> P </span>
+				<span id="O"> O </span>
+				<span id="M"> M </span>
+				<span id="E1"> E </span>
+				<span id="T2"> T </span>
+				<span id="E2"> E </span>
+				<span id="R"> R </span>
+			</h1>
+		</header>
+
+		<section id="word-section">
+			<div class="waiting">⌛</div>
+		</section>
+
+		<section id="type-section">
+			<input id="typebox" name="typebox" type="text" tabindex="1" autofocus onkeyup="typingTest(event)"/>
+			
+			<div id="timer" class="type-btn">
+				<span>1:00</span>
+			</div>
+			
+			<button id="restart" class="type-btn" tabindex="2" onclick="restartTest()">
+				<span id="restart-symbol">↻</span>
+			</button>
+		</section>
+	</body>
+</html>
